@@ -1,0 +1,41 @@
+{
+  "name": "simple-test-requests",
+  "author": "DanilSord",
+  "version": "1.0.0",
+  "description": "Simple server-side queries to estimate the speed and latency of receiving data and responses from the NodeJS server.",
+  "license": "MIT",
+  "keywords": [
+    "test",
+    "server",
+    "latency",
+    "speed",
+    "nodejs",
+    "http"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanilSord/simple-test-requests"
+  },
+  "bugs": {
+    "url": "https://github.com/DanilSord/simple-test-requests/issues"
+  },
+  "homepage": "https://github.com/DanilSord/simple-test-requests",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon --signal SIGTERM --exec \"node src/app.js\"",
+    "dev-fix": "nodemon --exec \"npm run fix && node src/app.js\"",
+    "lint": "eslint --ignore-path .gitignore .",
+    "fix": "eslint --fix --ignore-path .gitignore ."
+  },
+  "engines": {
+    "node": "^12.9 || 14 || 16"
+  },
+  "dependencies": {
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "nodemon": "^2.0.4"
+  }
+}
